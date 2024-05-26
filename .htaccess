@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?yourwebsite.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|m3u8|htm)$ - [NC,F,L]
+
+
+
